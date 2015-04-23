@@ -79,7 +79,7 @@
                   <a data-hash href="#metrics">Metrics</a>
                 </li>
                 <li>
-                  <a data-hash href="#contact">Contact Us</a>
+                  <a data-hash href="#contact">Apply</a>
                 </li>
               </ul>
             </nav>
@@ -139,11 +139,11 @@
             <div>
 
               <p class="featured lead">
-                Statistically, China is the country with the largest population in the world. Witnessing the biggest and economical growth in the history, it now forms the largest population of Netizens, with about <strong>700 Million</strong> people connected to the Internet. However, due to its infrastructure, some services hosted outside of the country can be really <strong>difficult to reach</strong> within China.<br/>
+                Statistically, China is the country with the largest population in the world. Witnessing the biggest economical growth in the history, it now forms the largest population of Netizens with about <strong>700 Million</strong> people connected to the Internet. However, due to its network infrastructure, some services hosted outside of China can be really <strong>difficult to reach</strong> within the country..<br/>
               </p><p>
                 After spending several years in China, we realized it was a recurrent problem. The fact is, most websites and services commonly used in the west are not fairly accessible to people living in China.<br/>
                 Conscious that a <strong>better situation</strong> is wished by everyone, we decided to start monitoring the most popular services used to build web applications, in order to help you making the most appropriate choices while building your product.<br/><br/>
-                <a href="#graph">Here are the results we obtained the past week.</a>
+                <a href="#graph">Here are the results.</a>
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@
               </div>
 
               <h2 class="short">Apply for <strong>Private Beta</strong></h2>
-              <form id="contactForm" action="php/contact-form.php" method="POST">
+              <form id="contactForm" action="http://formspree.io/beta@enterthewall.net" method="POST">
                 <div class="row">
                   <div class="form-group">
                     <div class="col-md-6">
@@ -185,7 +185,7 @@
                     </div>
                     <div class="col-md-6">
                       <label>Your email address *</label>
-                      <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+                      <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="_replyto" id="email" required>
                     </div>
                   </div>
                 </div>
@@ -199,6 +199,9 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12">
+                    <input type="hidden" name="_next" value="thankyou.html" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_subject" value="New beta application!" />
                     <input type="submit" value="Apply" class="btn btn-primary btn-lg" data-loading-text="Loading...">
                   </div>
                 </div>
