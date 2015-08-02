@@ -5,10 +5,10 @@
     <!-- Basic -->
     <meta charset="utf-8">
     <title>Enter The Wall</title>
-    <meta name="keywords" content="enter the wall, china, website china, enter china, internet china, great firewall, gfw, API, REST, webhook, website testing, website performances, backend, integrations, website speed test, page speed" />
+    <meta name="keywords" content="enter the wall, etw, enter, china, website, internet, great firewall, gfw, API, webhook, website testing, website performances, backend, integration, website speed test, page speed" />
     <meta name="description" content="Enter The Wall monitors web sites and services performances in China, helping product builders to improve visibility and usability to Chinese people.">
 
-    <meta property="og:title" content="We monitored web APIs from China | Enter The Wall">
+    <meta property="og:title" content="We monitor the web from China | Enter The Wall">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.enterthewall.net/">
     <meta property="og:image" content="http://www.enterthewall.net/pictures/preview-200.jpg">
@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="css/skins/default.css">
 
     <!-- Theme Custom CSS -->
-    <!--<link rel="stylesheet" href="css/custom.css">-->
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Social Sharing buttons -->
     <link rel="stylesheet" href="css/rrssb.css" />
@@ -107,24 +107,28 @@
                 <img src="pictures/greatwall-blur.jpg" data-fullwidthcentering="on" alt="">
                 <div class="tp-caption top-label lfl stl"
                      data-x="center" data-hoffset="0"
-                     data-y="100"
+                     data-y="70"
                      data-speed="1"
                      data-start="0"
-                     data-easing="easeOutExpo">We test and monitor <strong>Websites</strong> and <strong>APIs</strong></div>
-                <div class="tp-caption main-label sft stb"
+                     data-easing="easeOutExpo"><strong>We Monitor</strong></div>
+                <div class="tp-caption main-label lfl stl"
                      data-x="center" data-hoffset="0"
-                     data-y="130"
+                     data-y="110"
                      data-speed="1"
                      data-start="0"
-                     data-easing="easeOutExpo">From China!</div>
-                <!--
-                    <div class="tp-caption bottom-label sft stb"
-                         data-x="center" data-hoffset="0"
-                         data-y="200"
-                         data-speed="1"
-                         data-start="0"
-                         data-easing="easeOutExpo"></div>
-                    -->
+                     data-easing="easeOutExpo">The Internet</div>
+                <div class="tp-caption bottom-label sft stb"
+                     data-x="center" data-hoffset="0"
+                     data-y="190"
+                     data-speed="1"
+                     data-start="0"
+                     data-easing="easeOutExpo"><strong>From China</strong></div>
+                <!--<div class="tp-caption bottom-label sft stb"
+                    data-x="center" data-hoffset="0"
+                    data-y="200"
+                    data-speed="1"
+                    data-start="0"
+                    data-easing="easeOutExpo"></div>-->
                 <a class="tp-caption customin btn btn-lg btn-primary main-button" data-hash href="#metrics"
                    data-x="center" data-hoffset="0"
                    data-y="250"
@@ -149,7 +153,7 @@
             </div>
             <div>
               <p class="featured lead">
-                China is the country with the largest population in the world. Witnessing the biggest economical growth in history, it now boasts the largest population of Netizens with roughly <strong>700 million</strong> people connected to the Internet. However, due to its network infrastructure, some services hosted outside of China can be really <strong>difficult to reach</strong> within the country...
+                China is the country with the largest population in the world. Witnessing the biggest economical growth in history, it now boasts the largest population of Netizens with roughly <strong>700 million people connected</strong> to the Internet. However, due to China's network infrastructure, some services hosted outside of China can be (very) <strong>difficult to reach</strong> within the country...
               </p><p>
                 After spending several years in China, we realized this was a recurrent problem. The fact is, most websites and services commonly used in the West are not accessible to people living in China.<br/>
                 We realize that <strong>everyone</strong> is not satisfied with this new status quo. So, we decided to start monitoring the most popular services used to build web applications in order to help you make the most appropriate choices while building your product.<br/><br/>
@@ -173,6 +177,7 @@
           <div class="col-md-10" id="graph">
             <h4 id="graphTitle"></h4>
             <h6 id="successRate"></h6>
+            <h7 id="graphLegend">response time (ms)</h7>
             <div id="healthCheckDiv">
               <canvas id="healthCheck"></canvas>
             </div>
@@ -270,7 +275,7 @@
                 <p>If you are building a website, a web product, or starting a business in China, we want to help you. <a href="#contact">Let us know</a> about your exciting project!</p>
               </section>
               <section>
-                <h4>What does this data correspond to?</h4>
+                <h4>What does these metrics correspond to?</h4>
                 <p>
                   To perform the test, we measure the time it takes to get the <em>HTTP header</em> of a given <em>endpoint</em>.<br/>
                   The HTTP header is the very first part of the data you get when trying to access a website.<br/>
@@ -286,7 +291,7 @@
                 </p>
               </section>
               <section>
-                <h4>How did you get these measures?</h4>
+                <h4>How did these metrics have been gathered?</h4>
                 <p>
                   We test services regularly during the day from different home-based broadband connections. We use dedicated personal computers to perform these tests.
                 </p>
@@ -314,16 +319,16 @@
           <div class="row" id="contact">
             <div class="col-md-6">
 
-              <h2 class="short">Apply for <strong>Private Beta</strong></h2>
+              <h2 class="short">Apply for <strong>Private Beta</strong> <span class="small-text-title"> -  it's free!</span></h2>
               <form id="contactForm" action="http://formspree.io/beta@enterthewall.net" method="POST">
                 <div class="row">
                   <div class="form-group">
                     <div class="col-md-6">
-                      <label>Your name *</label>
+                      <label>Your name  <i>(required)</i></label>
                       <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
                     </div>
                     <div class="col-md-6">
-                      <label>Your email address *</label>
+                      <label>Your email address  <i>(required)</i></label>
                       <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="_replyto" id="email" required>
                     </div>
                   </div>
@@ -351,8 +356,8 @@
               <h4 class="push-top">Stay tuned,</h4>
               <p>
                 We're going further!<br/><br/>
-                Our main objective is to help you build awesome products, fairly accessible to people living in the world's fastest growing economy: China.<br/>
-                We will soon offer a platform that will let you test and monitor your services, as they appear to Chinese netizens.<br/><br/>
+                Our main objective is to help you build awesome products, fairly accessible to people living in a country where nearly a billion of them are connected to the internet, but where the current infrastructure sometimes limits its usability.<br/>
+                We will soon offer a platform that will let you test and monitor your own services, as they appear to Chinese netizens. We want to help you entering China.<br/><br/>
                 Leave us your contact details on the left form to be part of our private beta for free! To ensure we provide the best platform for you, let us know which kind of product you are building and how we can help you.
               </p>
 
