@@ -6,4 +6,4 @@ To add a service to the list, please see the [APIs](https://github.com/EnterTheW
 
 ## Credits
 
-(c) 2015, Almaritech Ltd. All Rights Reserved.
+(c) 2015. All Rights Reserved.
